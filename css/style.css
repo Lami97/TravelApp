@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.header {
+    height: 600px;
+    width: 100%;
+    color: white;
+}
+.header-wrapper{
+    display:flex;
+    
+}
+.header-left{
+    background-color: rgb(26, 46, 53);
+    width:50%;
+    
+}
+.header-right{
+    background-color: rgb(27,187,179);
+    width:50%;
+}
+.header-left h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    margin-top:180px;
+    text-align: center;
+}
+
+.header-left p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+.nav {
+    width: 98%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-img {
+    width: 30px;
+    height: 20px;
+    background-image: url("../images/menu.png");
+    position: relative;
+    right: 50px;
+    top: 20px;
+}
+
+.logo{
+    display:flex;
+    padding-left:10px;
+    padding-top:10px;
+}
+.logo-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+.header-button {
+    background-color: coral;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    padding: 15px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    gap:5px;
+    margin-top: 50px;
+    text-align: center;
+}
+.header-button-right{
+    background-color: rgb(240,247,255);
+    color:black;
+    
+}
+.about-us-image {
+   
+    height: 800px;
+    background-image: url("../images/about-img.jpg");
+    background-size:cover;
+}
+
+.about-us {
+    text-align: center;
+
+}
+
+.about-us h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+}
+
+.about-us p {
+
+    font-style: italic;
+    color: gray;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 5px;
+    width: 90px;
+    background-color: coral;
+    color: white;
+    font-style: italic;
+    border: none;
+    border-radius: 2px;
+}
+
+.offer-free {
+    color: white;
+    font-size: large;
+    background-color: coral;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.offer-price {
+    font-size: x-large;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-weight: 700;
+    background-color: rgb(28, 187, 180);
+    color: white;
+}
+
+.ponuda-dugme {
+    background-color: rgb(26, 46, 53);
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#best-offers h1 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top:120px;
+}
+
+#best-offers p{
+    margin-top:60px;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+#destinacije{
+    display:flex;
+    flex-wrap: wrap;
+}
+.offer{
+    width:30%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:5px;
+   
+}
+.offer-image{
+    width:100%;
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.akcija{
+    position:relative;
+    top:70px;
+    right:170px;
+    background-color: rgba(119, 18, 18, 0.459);
+    width:100px;
+    text-align: center;
+    color:white;
+    transform:rotate(45deg);
+}
+.offer-details{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.offer-destination{
+    font-size: larger;
+    font-weight: bold;
+}
+.offer-info{
+    display:flex;
+    justify-content: space-between;
+}
+.travel-header{
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    font-size:x-large
+}
+.travel-header p{
+    color:rgb(128, 128, 128)
+}
+.styled-table{
+margin-left:auto;
+margin-right:auto;
+width:95%;
+}
+.city-weather-header{
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    background-color: rgb(244,243,243);
+}
+.city-weather-header h1{
+    font-size:xxx-large;
+}
+.city-weather-header p{
+    color:rgb(128, 128, 128);
+}
+.booking-header{
+    font-family: "Brush Script MT", cursive;
+    color:white;
+    text-align:center;
+}
+.propeller {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.city-card {
+    padding: 10px;
+    border-radius: 15px;
+    border-top: 4px solid rgb(28, 187, 180);
+    border-left: 4px solid rgb(28, 187, 180);
+    width: 22%;
+    box-shadow: 10px 10px 5px -8px rgba(199, 185, 199, 1);
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.city-name {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: rgb(83, 81, 81);
+}
+
+.city-card-right {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Lucida Handwriting;
+    font-size: small;
+    color: rgb(28, 187, 180);
+    text-align: center;
+}
+
+#svg-div {
+    margin-left: 20px;
+}
+
+.wind-vel {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: small;
+    font-family: Lucida Handwriting;
+    color: rgb(28, 187, 180);
+    text-align: center;
+}
+
+.city-card-wrapper {
+    position: relative;
+    top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+@media (min-width:600px) and (max-width:700px){
+   .header{
+    height:500px;
+   }
+    .header-right img{
+        width:80%;
+        height:50%;
+        margin-top:150px;
+        margin-left:40px;
+    }
+    .about-us-image {
+        display:inline-block;
+        width:100%;
+        background-size:contain;
+        background-repeat: no-repeat;
+      height:400px;
+    }
+    #destinacije{
+        display:block;
+    }
+    .offer {
+        
+        width:100%;
+        display:flex;
+    }
+    
+    
+  
+     
+    
+    
+    
+
+
+

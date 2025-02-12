@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>WRD Ispit 07.09.2024</title>
+
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/styled-table.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="dialog/fit-dialog.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <div class="logo-text">Travel booking</div>
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <h1>You can book your travel here!</h1>
+          <p>
+            If you want to travel all you need is</br> good organization and our
+            website.
+          </p>
+          <div class="button-wrapper">
+            <div class="header-button">About Us</div>
+            <div class="header-button header-button-right">Book Trip</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <img src="images/slider-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="about-us-image"></div>
+      <h1>About travel company</h1>
+      <p>Discover the world with us, where every adventure begins with a spark of curiosity and ends with a treasure trove of memories. We specialize in crafting unforgettable travel experiences that cater to the unique desires of each explorer. Whether you're yearning for the luxury of a five-star retreat, the thrill of an off-the-beaten-path adventure, or the serenity of a tranquil getaway, our team curates personalized itineraries that promise to exceed your expectations.
+        <div class="search">
+          <input class="search-input" />
+          <button  class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="travel-destinations">
+      <section  id="best-offers">
+        <h1>Best offers</h1>
+        <p>Here is a list of best travels that our company offers</p>
+        <div id="destinacije" class="offers-container">
+           
+         
+        </div>
+    </section>
+    </div>
+
+    <div class="travel-tabel">
+      <div class="separator">
+        <div class="line-black"></div>
+        <div class="line-green"></div>
+        <div class="line-black"></div>
+      </div>
+      <div class="travel-header">
+        <h1>Our Travel Plans</h1>
+        <p>
+          Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet</br>
+          ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit
+          clita.
+        </p>
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+      </div>
+      <table class="styled-table">
+        <thead class="travel-table-header">
+          <tr>
+            <th>Putovanje ID</th>
+            <th>Polazak</th>
+            <th>Povratak</th>
+            <th>Broj dana</th>
+            <th>Broj slobodnih mjesta</th>
+            <th>Cijena</th>
+            <th>Odaberi</th>
+          </tr>
+        </thead>
+        <tbody id="putovanjaTabela">
+        </tbody>
+      </table>
+    </div>
+    <div class="city-weather">
+      <div class="city-weather-wrapper">
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+        <div class="city-weather-header">
+          <h1>Our Cities Itinerary</h1>
+          <p>
+            Vero justo sed sed vero clita amet. Et justo vero sea diam elitr
+            amet</br> ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero
+            elitr sit clita.
+          </p>
+          <div class="separator">
+            <div class="line-black"></div>
+            <div class="line-green"></div>
+            <div class="line-black"></div>
+          </div>
+        </div>
+        <div class="city-card-wrapper" id="vrijemeGradova">
+        </div>
+      </div>
+    </div>
+
+    <div class="conact">
+      <div class="separator">
+        <div class="line-black"></div>
+        <div class="line-green"></div>
+        <div class="line-black"></div>
+      </div>
+      <div class="booking-header">
+        <h1>Book your destination</h1>
+        <div class="separator">
+          <div class="line-black"></div>
+          <div class="line-green"></div>
+          <div class="line-black"></div>
+        </div>
+      </div>
+      <div id="contact-form">
+        <div class="container2">
+          <div class="item">
+            <label for="drzavaText">Drzava</label>
+            <input type="text" id="drzavaText" disabled />
+          </div>
+          <div class="item">
+            <label for="datumPolaska">Datum polaska</label>
+            <input type="text" id="datumPolaska" disabled />
+          </div>
+        </div>
+ 
+        <hr />
+ 
+        <div class="container2">
+          <div class="item">
+            <label class="bold" for="brojGostiju">Broj gostiju</label>
+            <input
+              type="number"
+              id="brojGostiju"
+              value="1"
+              min="1"
+              max="5"
+              oninput="promjenaBrojaGostiju()"
+            />
+          </div>
+          <div class="item">
+            <label for="cijenaPoGostu">Cijena po gostu</label>
+            <input type="text" id="cijenaPoGostu" disabled />
+          </div>
+        </div>
+ 
+        <div class="container2">
+          <div class="item"></div>
+          <div class="item">
+            <label class="bold" for="ukupnaCijena">Sumarno za sve goste</label>
+            <input type="text" id="ukupnaCijena" disabled />
+          </div>
+        </div>
+        <hr />
+        <div id="gosti"></div>
+        <br />
+        <br />
+        <div class="container3">
+          <div class="item-container">
+            <div class="item">
+              <label for="brojIndeksa">Broj indeksa</label>
+              <input id="brojIndeksa" oninput="provjeriBrojIndeksa()" />
+            </div>
+            <div class="item">
+              <label for="phone">Broj telefona</label>
+              <input id="phone" oninput="provjeriTelefon()" />
+            </div>
+          </div>
+          <div class="item-container">
+            <div class="item">
+              <label for="email">E-mail</label>
+              <input id="email" oninput="provjeriEmail()" />
+            </div>
+            <div class="item">
+              <label for="datumVazenjaPasosa">Datum važenja pasoša</label>
+              <input id="datumVazenjaPasosa" oninput="provjeriPasos()" />
+            </div>
+          </div>
+        </div>
+ 
+        <button class="button" onclick="posalji()">Send</button>
+      </div>
+    </div>
+  </body>
+  <script src="dialog/fit-dialog.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/termometar.js"></script>
+  <script src="js/propeler.js"></script>
+  <script>
+    
+   
+
+  </script>
+</html>
